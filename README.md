@@ -1,12 +1,6 @@
-Scraping Notes
+# Scraping Guide for Python
 
-Simple notes on Python Scraper using Beautiful Soup and Selenium
-
-Prepared by Sandeep Sthapit
-
-# OVERVIEW & PURPOSE
-
-Help newcomers get familiarized with scrapers used in Ibriz.ai. This provides an overview of techniques used in scrapers.
+Simple notes on Python Scraper using Beautiful Soup and Selenium. This will help newcomers get familiarized with scrapers. This provides an overview of techniques used in scrapers.
 
 # READING Robots.txt
 
