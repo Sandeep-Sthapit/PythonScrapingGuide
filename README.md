@@ -146,7 +146,7 @@ submit =  WebDriverWait(driver, DELAY).until(EC.presence_of_element_located((By.
 
 except TimeoutException:
 
-        print("Loading took too much time!")
+    print("Loading took too much time!")
 
 link = driver.find_elements(By.XPATH, '//a’)
 
