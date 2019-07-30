@@ -72,27 +72,27 @@ This code outputs the HTML file *page1.html* in *pythonscraing.com*. This code d
 
 Beautiful soup is a python library that is used to interpret HTML webpage and extract information from it. It converts webpages to beautiful soup object with the following structure:
 
-html → <html><head>...</head><body>...</body></html>
+`html → <html><head>...</head><body>...</body></html>`
 
-head → <head><title>A Useful Page<title></head>
+`head → <head><title>A Useful Page<title></head>`
 
-title → <title>A Useful Page</title>
+`title → <title>A Useful Page</title>`
 
-body → <body><p>An Int...</p><div>Lorem ip...</div></body>
+`body → <body><h1>An Int...</h1><div>Lorem ip...</div></body>`
 
-span → <span>An Interesting Text</span>
+`h1 → <h1>An Interesting Title</h1>`
 
-div → <div>Lorem Ipsum dolor...</div>
+`div → <div>Lorem Ipsum dolor...</div>`
 
-To use beautiful soup, we proceed like follows:
+`To use beautiful soup, we proceed like follows:`
 
-html = urlopen("http://www.pythonscraping.com/exercise1.html") 
+`html = urlopen("http://www.pythonscraping.com/exercise1.html")` 
 
-bsObj = BeautifulSoup(html.read());
+`bsObj = BeautifulSoup(html.read())`
 
-Here a webpage is loaded and converted to beautiful soup object. Now we have capabilities to access individual contents inside the page. Suppose if we are to extract the span text information, we can achieve this by using following code:
+Here a webpage is loaded and converted to beautiful soup object. Now we have capabilities to access individual contents inside the page. Suppose if we are to extract the title information, we can achieve this by using following code:
 
-text = bsObj.span
+text = bsObj.h1
 
 It is important to know how the website is constructed to extract the required information. We can use advanced functions like find, findall, select, select_one, children, parent and pass various arguments to it so that we can filter elements using html attributes like class, ids, style and so on. Select and select_one are easier to use if we are familiar with CSS selectors, and find and findall are better to use for advanced filtering.
 
